@@ -11,6 +11,10 @@
 		0267A64D26E0621F00BFFABC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0267A64C26E0621F00BFFABC /* ContentView.swift */; };
 		0267A64F26E0622000BFFABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0267A64E26E0622000BFFABC /* Assets.xcassets */; };
 		0267A65226E0622000BFFABC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0267A65126E0622000BFFABC /* Preview Assets.xcassets */; };
+		0267A65B26E0633200BFFABC /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0267A65A26E0633200BFFABC /* Login.swift */; };
+		0267A67726E09BB000BFFABC /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0267A67626E09BB000BFFABC /* CustomTextField.swift */; };
+		0267A67926E09F2400BFFABC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0267A67826E09F2400BFFABC /* LoginViewModel.swift */; };
+		0267A67C26E0B3F600BFFABC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0267A67B26E0B3F600BFFABC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		0267A64C26E0621F00BFFABC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0267A64E26E0622000BFFABC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0267A65126E0622000BFFABC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0267A65A26E0633200BFFABC /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		0267A67626E09BB000BFFABC /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		0267A67826E09F2400BFFABC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		0267A67B26E0B3F600BFFABC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0267A67D26E0B41D00BFFABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +60,10 @@
 		0267A64926E0621F00BFFABC /* FullLogin0902 */ = {
 			isa = PBXGroup;
 			children = (
+				0267A67D26E0B41D00BFFABC /* Info.plist */,
+				0267A67B26E0B3F600BFFABC /* GoogleService-Info.plist */,
+				0267A65926E0630300BFFABC /* ViewModel */,
+				0267A65826E062F900BFFABC /* View */,
 				0267A64A26E0621F00BFFABC /* FullLogin0902App.swift */,
 				0267A64C26E0621F00BFFABC /* ContentView.swift */,
 				0267A64E26E0622000BFFABC /* Assets.xcassets */,
@@ -65,6 +78,23 @@
 				0267A65126E0622000BFFABC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0267A65826E062F900BFFABC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0267A65A26E0633200BFFABC /* Login.swift */,
+				0267A67626E09BB000BFFABC /* CustomTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0267A65926E0630300BFFABC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0267A67826E09F2400BFFABC /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,6 +141,9 @@
 				Base,
 			);
 			mainGroup = 0267A63E26E0621F00BFFABC;
+			packageReferences = (
+				0267A67A26E0B00300BFFABC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 0267A64826E0621F00BFFABC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +160,7 @@
 			files = (
 				0267A65226E0622000BFFABC /* Preview Assets.xcassets in Resources */,
 				0267A64F26E0622000BFFABC /* Assets.xcassets in Resources */,
+				0267A67C26E0B3F600BFFABC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0267A67726E09BB000BFFABC /* CustomTextField.swift in Sources */,
 				0267A64D26E0621F00BFFABC /* ContentView.swift in Sources */,
 				0267A64B26E0621F00BFFABC /* FullLogin0902App.swift in Sources */,
+				0267A67926E09F2400BFFABC /* LoginViewModel.swift in Sources */,
+				0267A65B26E0633200BFFABC /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,12 +309,16 @@
 				DEVELOPMENT_TEAM = Z24MR455SQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FullLogin0902/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = FullLogin0902;
+				INFOPLIST_KEY_CFBundleName = FullLogin0902;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +343,16 @@
 				DEVELOPMENT_TEAM = Z24MR455SQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FullLogin0902/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = FullLogin0902;
+				INFOPLIST_KEY_CFBundleName = FullLogin0902;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -343,6 +388,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0267A67A26E0B00300BFFABC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 0267A63F26E0621F00BFFABC /* Project object */;
 }
